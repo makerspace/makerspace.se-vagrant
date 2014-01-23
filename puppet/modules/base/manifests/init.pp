@@ -20,6 +20,11 @@ class base {
     require => Exec['update', 'postinstall'],
   }
 
+  package { 'samba':
+    ensure  => latest,
+    require => Exec['update', 'postinstall'],
+  }
+
   # Execute the postinstall script that comes with the base box.
   exec { 'postinstall':
     command => '/home/vagrant/postinstall.sh > /dev/null',

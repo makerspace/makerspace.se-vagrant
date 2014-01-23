@@ -47,4 +47,4 @@ class { "${lang}" : }
 
 class { "${db}" : }
 
-class { "drupal" : }
+class { "makerspace" : }

@@ -17,12 +17,4 @@ class php::pear {
   pear-package { 'pear.phpunit.de/PHPUnit':
     require => Exec['auto_discover'],
   }
-
-  pear-package { 'Console_Table':
-    require => Exec['auto_discover'],
-  }
-
-  pear-package { 'drush/drush':
-    require => Exec['auto_discover'],
-  }
 }
