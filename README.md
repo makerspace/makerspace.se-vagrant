@@ -29,6 +29,14 @@ vagrant suspend
 vagrant up
 ```
 
+Add this to your hosts file
+```
+192.168.242.10    internal.dev.makerspace.se
+192.168.242.10    dev.makerspace.se
+```
+
+SSH username/password is vagrant/vagrant
+
 TODO
 ===
 * Drupal Installation
